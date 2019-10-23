@@ -1,0 +1,57 @@
+{% extends "layouts/layout.nunjucks" %}
+
+{% block top_btn_section %}
+   <hr/>
+   <a class="btn btn-success" href="/">Back</a>
+{% endblock %}
+
+{% block middle %}
+<br/>
+<div class="card text-center">
+   <div class="card-header">
+      <b>Add new movie</b>
+   </div>
+   <div class="card-body">
+      <form action="/home/store" method="post" accept-charset="utf-8">
+         <div class="form-group row">
+            <label for="movie_name" class="col-sm-2 col-form-label">Movie Name</label>
+            <div class="col-sm-10">
+               <input type="text" class="form-control" name="movie_name" placeholder="Movie Name">
+            </div>
+         </div>
+         <div class="form-group row">
+            <label for="director" class="col-sm-2 col-form-label">Director</label>
+            <div class="col-sm-10">
+               <input type="text" class="form-control" name="director" placeholder="Director">
+            </div>
+         </div>
+         <div class="form-group row">
+            <label for="main_actor" class="col-sm-2 col-form-label">Main Actor</label>
+            <div class="col-sm-10">
+               <input type="text" class="form-control" name="main_actor" placeholder="Main Actor">
+            </div>
+         </div>
+         <div class="form-group row">
+            <label for="main_actor" class="col-sm-2 col-form-label">Main Actress</label>
+            <div class="col-sm-10">
+               <input type="text" class="form-control" name="main_actress" placeholder="Main Actress">
+            </div>
+         </div>
+         <div class="form-group row">
+            <label for="company" class="col-sm-2 col-form-label">Production Company</label>
+            <div class="col-sm-10">
+               <input type="text" class="form-control" name="company" placeholder="Production Company">
+            </div>
+         </div>
+         <div class="form-group row">
+            <label for="released_date" class="col-sm-2 col-form-label">Released Date</label>
+            <div class="col-sm-10">
+               <input type="text" class="form-control" name="released_date" placeholder="Released Date">
+            </div>
+         </div>
+         <input type="reset" name="reset" value="Reset" class="btn btn-danger float-right" />
+         <input type="submit" name="submit" value="Submit" class="btn btn-primary float-right" />
+      </form>
+   </div>
+</div>
+{% endblock %}

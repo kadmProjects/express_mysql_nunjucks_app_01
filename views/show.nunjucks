@@ -1,0 +1,40 @@
+{% extends "layouts/layout.nunjucks" %}
+
+{% block top_btn_section %}
+   <hr/>
+   <a class="btn btn-success" href="/">Back</a>
+{% endblock %}
+
+{% block middle %}
+<br/>
+<table class="table table-striped table-hover">
+   <caption>Details of a single movie</caption>
+   <thead>
+   <tr>
+      <th>
+         <h3>{{ movie.name }}</h3>
+      </th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr>
+      <td scope="row">{{ movie.id }}</td>
+   </tr>
+   <tr>
+      <td scope="row">{{ movie.director }}</td>
+   </tr>
+   <tr>
+      <td scope="row">{{ movie.main_actor }}</td>
+   </tr>
+   <tr>
+      <td scope="row">{{ movie.main_actress }}</td>
+   </tr>
+   <tr>
+      <td scope="row">{{ movie.production_company }}</td>
+   </tr>
+   <tr>
+      <td scope="row">{{ movie.released_date }}</td>
+   </tr>
+   </tbody>
+</table>
+{% endblock %}
