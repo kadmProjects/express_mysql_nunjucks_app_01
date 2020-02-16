@@ -11,7 +11,7 @@ const db = mysql.createConnection ({
    host: 'localhost',
    user: 'root',
    password: '123456',
-   database: 'node_mysql_crud_01'
+   database: 'express_mysql_nunjucks_app_01'
 });
 
 // connect to database
